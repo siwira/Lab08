@@ -32,6 +32,6 @@ public class City {
         return city.hashCode() + province.hashCode();
     }
 
-    // include hasCity() function
+
 
 }
