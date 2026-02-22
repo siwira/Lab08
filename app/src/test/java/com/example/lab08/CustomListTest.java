@@ -10,4 +10,13 @@ public class CustomListTest {
         list.addCity(calgary);// This will fail initially because hasCity() doesn't exist
         assertTrue(list.hasCity(calgary));
     }
+    @Test
+    public void testDeleteCity(){
+        CustomList list = new CustomList();
+        City calgary = new City("Calgary", "AB");
+        list.addCity(calgary);
+        assertTrue(list.hasCity(calgary));
+        list.deleteCity(calgary); // this will fail
+        assertFalse(list.hasCity(calgary));
+    }
 }
