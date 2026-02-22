@@ -23,5 +23,9 @@ public class CustomList {
     public boolean hasCity(City city){
         return this.cities.contains(city);
     }
+    // include deleteCity() function
+    public void deleteCity(City city){
+        this.cities.remove(city);
+    }
 
 }
