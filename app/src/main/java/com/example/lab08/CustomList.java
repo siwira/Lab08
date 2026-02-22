@@ -27,5 +27,8 @@ public class CustomList {
     public void deleteCity(City city){
         this.cities.remove(city);
     }
+    public int countCity(){
+        return this.cities.size();
+    }
 
 }
